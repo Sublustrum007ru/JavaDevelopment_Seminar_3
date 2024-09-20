@@ -6,8 +6,10 @@ public class CompareArrays {
         if(arr1.length == arr2.length){
             int count = 0;
             for (int i = 0; i < arr1.length; i++) {
-                if(arr1[i] == arr2[i]){
-                    count++;
+                if(arr1[i].getClass().getSimpleName() == arr2[i].getClass().getSimpleName()){
+                    if(arr1[i] == arr2[i]){
+                        count++;
+                    }
                 }
             }
             if(count == arr1.length){
